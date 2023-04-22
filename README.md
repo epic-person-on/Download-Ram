@@ -1,1 +1,15 @@
-# not-a-laudering-scheme
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
+# this is a joke dont report to authorities plz
