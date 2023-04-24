@@ -55,6 +55,11 @@
       </header>
       <main>
         <span>Click Here To Get 1 Petabyte Of Ram!</span>
+        <button onclick="startLoading()">Download Text File</button>
+        <div id="loadingBar" style="display: none;">
+        <div id="progressBar" style="width: 0%;"></div>
+
+        
       </main>
       <footer>
         <p><br></p>
@@ -72,5 +77,38 @@
         <p>P.S. this is all just a joke and no malware is contained within this site
       </footer>
     </div>
+      <script>
+      function startLoading() {
+        // Show loading bar
+        var loadingBar = document.getElementById("loadingBar");
+        loadingBar.style.display = "block";
+        // Simulate loading for 10 minutes
+        var progressBar = document.getElementById("progressBar");
+        var percent = 0;
+        var intervalId = setInterval(function() {
+          percent++;
+          progressBar.style.width = percent + "%";
+          if (percent >= 99) {
+            clearInterval(intervalId);
+            // Wait for 5 minutes before downloading file
+            setTimeout(function() {
+              downloadFile();
+            }, 5 * 60 * 1000);
+          }
+        }, 10 * 60 * 1000 / 100); // Update progress every 6 seconds
+      }
+      function downloadFile() {
+        // Generate and download file
+        var text = "Hello, world!";
+        var filename = "example.html";
+        var element = document.createElement("a");
+        element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
+        element.setAttribute("download", filename);
+        element.style.display = "none";
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+      }
+    </script>
   </body>
 </html>
